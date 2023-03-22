@@ -23,7 +23,11 @@ export const Navigation = () => {
           <Link to="/our-story" title="Our Story">
             Our Story
           </Link>
-          <a href="/#">News</a>
+          <AnchorLink
+            to="/#news"
+            title="News"
+            stripHash
+          ></AnchorLink>
           <AnchorLink
             to="/#contactUs"
             title="Contact Us"

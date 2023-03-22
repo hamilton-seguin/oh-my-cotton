@@ -4,7 +4,7 @@ import React from "react";
 const date = new Date().getFullYear();
 export const Footer = () => {
   return (
-    <footer id="contactUs" className="flex m-10">
+    <footer id="contactUs" className="flex m-10 mx-16">
       <div className="flex flex-col flex-1 justify-between">
         <div className="max-w-xs  leading-9">
           <h1 className="text-3xl font-bold mb-8">

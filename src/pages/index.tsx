@@ -1,14 +1,20 @@
 import * as React from "react";
-import { HeadFC, Link, PageProps } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import { StaticImage } from "gatsby-plugin-image";
+import Journal from "../components/Journal";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <main>
-      <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
+        <StaticImage
+          alt="background"
+          src="../images/backgroundMain.jpeg"
+          className=""
+        />
+        <Journal />
       </main>
     </Layout>
   );
