@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Rosario";
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 23px;
-  color: #9F9F9F;
-  background: #FCFCFC,
+  color: #9f9f9f;
+  background-color: #fcfcfc;
 }

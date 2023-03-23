@@ -89,7 +89,6 @@ export default OurStory;
 export const Head: HeadFC = () => {
   return (
     <>
-      <body className="smooth-scroll" />
       <title>Our Story</title>
     </>
   );

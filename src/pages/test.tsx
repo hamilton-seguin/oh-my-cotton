@@ -202,7 +202,6 @@ export default IndexPage;
 export const Head: HeadFC = () => {
   return (
     <>
-      <body className="smooth-scroll" />
       <title>Home Test</title>
     </>
   );

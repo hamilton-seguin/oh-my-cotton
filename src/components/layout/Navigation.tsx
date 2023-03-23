@@ -23,7 +23,9 @@ export const Navigation = () => {
           <Link to="/our-story" title="Our Story">
             Our Story
           </Link>
-          <AnchorLink
+          <a href="#news" className="smooth-scroll">News</a>
+          <a href="#contactUs" className="smooth-scroll">Contact Us</a>
+          {/* <AnchorLink
             to="#/news"
             title="News"
             className="stripped"
@@ -34,7 +36,7 @@ export const Navigation = () => {
             title="Contact Us"
             className="stripped"
             stripHash
-          ></AnchorLink>
+          ></AnchorLink> */}
         </div>
       </div>
     </nav>

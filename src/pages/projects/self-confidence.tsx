@@ -15,7 +15,6 @@ export default SelfConfidence;
 export const Head: HeadFC = () => {
   return (
     <>
-      <body className="smooth-scroll" />
       <title>Self Confidence</title>
     </>
   );
