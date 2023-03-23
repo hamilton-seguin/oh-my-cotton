@@ -27,7 +27,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        duration: 100,
+        duration: 400,
       },
     },
     {

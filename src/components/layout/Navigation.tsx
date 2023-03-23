@@ -24,13 +24,15 @@ export const Navigation = () => {
             Our Story
           </Link>
           <AnchorLink
-            to="#news"
+            to="#/news"
             title="News"
+            className="stripped"
             stripHash
           ></AnchorLink>
           <AnchorLink
-            to="#contactUs"
+            to="/#contactUs"
             title="Contact Us"
+            className="stripped"
             stripHash
           ></AnchorLink>
         </div>
