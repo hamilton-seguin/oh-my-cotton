@@ -9,9 +9,9 @@ export const Navigation = () => {
     <nav className="m-4">
       <div className="flex justify-center items-center">
         <div className="flex flex-1 justify-around">
-          <a href="/#">Find Us</a>
-          <a href="/#">Product Care</a>
-          <a href="/#">Sustainability</a>
+          <a href="#">Find Us</a>
+          <a href="#">Product Care</a>
+          <a href="#">Sustainability</a>
         </div>
         <div className="flex">
           <Link to="/" title="Product care">
@@ -24,12 +24,12 @@ export const Navigation = () => {
             Our Story
           </Link>
           <AnchorLink
-            to="/#news"
+            to="#news"
             title="News"
             stripHash
           ></AnchorLink>
           <AnchorLink
-            to="/#contactUs"
+            to="#contactUs"
             title="Contact Us"
             stripHash
           ></AnchorLink>
