@@ -5,12 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: "Rosario";
+  font-family: "Rosario", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
-  line-height: 23px;
+  line-height: 1.75rem;
   color: #9f9f9f;
   background-color: #fcfcfc;
 }

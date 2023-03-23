@@ -2,19 +2,20 @@ import { HeadFC } from "gatsby";
 import React from "react";
 import Layout from "../../components/Layout";
 
-const SelfConfidence = () =>{
+const SelfConfidence = () => {
   return (
     <Layout>
-    <h1> SelfConfidence </h1>
+      <h1> SelfConfidence </h1>
     </Layout>
-  )
-}
+  );
+};
 
 export default SelfConfidence;
 
 export const Head: HeadFC = () => {
   return (
     <>
+      <html lang="en" />
       <title>Self Confidence</title>
     </>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-Links";
 
 import { Logo } from "../Logo";
 
@@ -23,8 +22,8 @@ export const Navigation = () => {
           <Link to="/our-story" title="Our Story">
             Our Story
           </Link>
-          <a href="#news" className="smooth-scroll">News</a>
-          <a href="#contactUs" className="smooth-scroll">Contact Us</a>
+          <a href="/#news">News</a>
+          <a href="#contactUs">Contact Us</a>
           {/* <AnchorLink
             to="#/news"
             title="News"

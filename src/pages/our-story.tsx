@@ -89,6 +89,7 @@ export default OurStory;
 export const Head: HeadFC = () => {
   return (
     <>
+      <html lang="en" />
       <title>Our Story</title>
     </>
   );

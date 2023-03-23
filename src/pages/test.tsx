@@ -143,7 +143,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-      <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
+        <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
         <h1 style={headingStyles}>
           Congratulations
           <br />
@@ -202,6 +202,7 @@ export default IndexPage;
 export const Head: HeadFC = () => {
   return (
     <>
+      <html lang="en" />
       <title>Home Test</title>
     </>
   );

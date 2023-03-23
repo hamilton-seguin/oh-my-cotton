@@ -25,6 +25,7 @@ export default IndexPage;
 export const Head: HeadFC = () => {
   return (
     <>
+      <html lang="en" />
       <title>Home Test</title>
     </>
   );

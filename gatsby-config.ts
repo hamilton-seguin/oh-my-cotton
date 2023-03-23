@@ -10,7 +10,6 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-anchor-links",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
@@ -24,25 +23,12 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        duration: 400,
-      },
-    },
-    {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Rosario`,
-            file: `https://fonts.googleapis.com/css2?family=Rosario:wght@400;700&display=swap`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-anchor-links",
+    //   options: {
+    //     duration: 400,
+    //   },
+    // },
   ],
 };
 
