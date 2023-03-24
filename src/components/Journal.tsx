@@ -17,7 +17,7 @@ export const Journal = () => {
         </Link>
       </div>
       <Draggable>
-        <div className="w-full flex gap-3 snap-x overflow-y-auto scroll-smooth" ref={journalRef}>
+        <div className="w-full flex gap-3 snap-x overflow-x-auto scroll-smooth" ref={journalRef}>
           <div className="snap-start shrink-0">
             <StaticImage
               src="../images/journal1.jpeg"
