@@ -22,7 +22,19 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
-    },
+    },{
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        mode: "async",
+        enableListener: true,
+        preconnect: ["https://fonts.gstatic.com"],
+        web: [{
+            name: "Rosario",
+            file: "https://fonts.googleapis.com/css2?family=Rosario:wght@400;700&display=swap",
+          },
+        ],
+      },
+    }
     // {
     //   resolve: "gatsby-plugin-anchor-links",
     //   options: {

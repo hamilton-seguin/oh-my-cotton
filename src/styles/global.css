@@ -15,3 +15,7 @@ body {
   color: #9f9f9f;
   background-color: #fcfcfc;
 }
+
+.drag {
+  cursor: grab;
+}

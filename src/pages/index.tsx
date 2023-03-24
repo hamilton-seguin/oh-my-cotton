@@ -3,7 +3,7 @@ import { HeadFC, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Journal from "../components/Journal";
+import { Journal } from "../components/Journal";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -15,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
           className=""
         />
         <Journal />
+        <p className="text-4xl font-bold text-center">Quality</p>
       </main>
     </Layout>
   );

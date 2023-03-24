@@ -1,48 +1,96 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { Draggable } from "./Draggable";
 
-const Journal = () => {
+export const Journal = () => {
+  const journalRef = useRef<HTMLDivElement>(null);
   return (
-    <div id="news" className="flex my-16 ml-10 overflow-auto">
-      <div className="text-center flex flex-col w-52">
-        <h1 className="text-3xl font-bold" >Journal</h1>
-        <Link to="/#">All news</Link>
+    <div
+      id="news"
+      className="flex my-16 overflow-hidden min-w-2xl relative w-full will-change-auto hover:will-change-scroll"
+    >
+      <div className="flex flex-col px-36 pb-72 justify-center">
+        <h1 className="text-3xl font-bold pb-10 px-1">Journal</h1>
+        <Link to="/#" className="text-end">
+          All news
+        </Link>
       </div>
-      <div className="w-full flex gap-8 snap-x scroll-pl-6 overflow-x-auto">
-        <div className="snap-start">
-          <StaticImage src="../images/journal1.jpeg" alt="ohmycotton vogue cover" />
-          <p>OHMYCOTTON on the cover of Vogue Thailand</p>
+      <Draggable>
+        <div className="w-full flex gap-3 snap-x overflow-y-auto scroll-smooth" ref={journalRef}>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal1.jpeg"
+              alt="ohmycotton vogue cover"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              OHMYCOTTON on the cover of Vogue Thailand
+            </p>
+          </div>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal2.jpeg"
+              alt="ohmycotton l'uomo cover"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              OHMYCOTTON on the cover of L'UOMO Vogue
+            </p>
+          </div>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal3.jpeg"
+              alt="donate and win visit the atelier"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              Donate and win a day at journal atelier
+            </p>
+          </div>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal1.jpeg"
+              alt="ohmycotton vogue cover"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              OHMYCOTTON on the cover of Vogue Thailand
+            </p>
+          </div>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal2.jpeg"
+              alt="ohmycotton l'uomo cover"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              OHMYCOTTON on the cover of L'UOMO Vogue
+            </p>
+          </div>
+          <div className="snap-start shrink-0">
+            <StaticImage
+              src="../images/journal3.jpeg"
+              alt="donate and win visit the atelier"
+              width={400}
+              draggable={false}
+            />
+            <p className="font-light text-sm py-8 text-center">
+              Donate and win a day at journal atelier
+            </p>
+          </div>
+          <div className="snap-end shrink-0 flex items-center pb-80">
+            <a href="#" className="text-center px-36" draggable={false}>
+              View all News
+            </a>
+          </div>
         </div>
-        <div className="snap-start">
-          <StaticImage src="../images/journal2.jpeg" alt="ohmycotton l'uomo cover" />
-          <p>OHMYCOTTON on the cover of L'UOMO Vogue</p>
-        </div>
-        <div className="snap-start">
-          <StaticImage
-            src="../images/journal3.jpeg"
-            alt="donate and win visit the atelier"
-          />
-          <p>Donate and win a day at our atelier</p>
-        </div>
-        <div className="snap-start">
-          <StaticImage src="../images/journal1.jpeg" alt="ohmycotton vogue cover" />
-          <p>OHMYCOTTON on the cover of Vogue Thailand</p>
-        </div>
-        <div className="snap-start">
-          <StaticImage src="../images/journal2.jpeg" alt="ohmycotton l'uomo cover" />
-          <p>OHMYCOTTON on the cover of L'UOMO Vogue</p>
-        </div>
-        <div className="snap-start">
-          <StaticImage
-            src="../images/journal3.jpeg"
-            alt="donate and win visit the atelier"
-          />
-          <p>Donate and win a day at our atelier</p>
-        </div>
-      </div>
+      </Draggable>
     </div>
   );
 };
-
-export default Journal;

@@ -37,6 +37,7 @@ const OurStory = () => {
             alt="ohmycotton designer Candelaria Castano"
             aspectRatio={1 / 1}
             width={710}
+            placeholder={"none"}
           />
         </div>
         <div className="flex justify-between relative left-0 max-w-screen-2xl my-10 mr-auto">
