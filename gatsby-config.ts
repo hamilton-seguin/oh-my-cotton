@@ -13,7 +13,6 @@ const config: GatsbyConfig = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -22,7 +21,8 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
-    },{
+    },
+    {
       resolve: "gatsby-omni-font-loader",
       options: {
         mode: "async",
@@ -34,13 +34,16 @@ const config: GatsbyConfig = {
           },
         ],
       },
-    }
-    // {
-    //   resolve: "gatsby-plugin-anchor-links",
-    //   options: {
-    //     duration: 400,
-    //   },
-    // },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          quality: 60,
+        },
+      },
+    },
   ],
 };
 

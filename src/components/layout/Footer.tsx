@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer id="contactUs" className="flex m-10 mx-16">
       <div className="flex flex-col flex-1 justify-between">
         <div className="max-w-xs  leading-9">
-          <h1 className="text-3xl font-bold mb-8">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-8">
             Contact us to get a special offer
           </h1>
 

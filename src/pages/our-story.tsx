@@ -12,8 +12,8 @@ const OurStory = () => {
         <div>BREADCRUMBS</div>
         <div className="flex justify-between relative right-0 max-w-screen-2xl mt-10 ml-auto">
           <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly text-justify leading-7">
-            <h1 className="text-3xl font-bold"> About the designers </h1>
-            <h2 className="font-bold">Candelaria Castano</h2>
+            <h1 className="text-4xl font-bold"> About the designers </h1>
+            <h2 className="font-bold text-2xl">Candelaria Castano</h2>
             <p>
               Her work explores the relationship between gender politics and
               romance tourism. With influences as diverse as Machiavelli and Roy
@@ -36,19 +36,19 @@ const OurStory = () => {
             src="../images/designer1.jpeg"
             alt="ohmycotton designer Candelaria Castano"
             aspectRatio={1 / 1}
-            width={710}
+            className="max-w-[49.5%]"
             placeholder={"none"}
           />
         </div>
         <div className="flex justify-between relative left-0 max-w-screen-2xl my-10 mr-auto">
           <StaticImage
-            src="../images/designer2.jpeg"
+            src="../images/designer3.jpeg"
             alt="ohmycotton designer Miyashiro Aiko"
             aspectRatio={1 / 1}
-            width={710}
+            className="max-w-[49.5%]"
           />
           <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly text-justify leading-7">
-            <h2 className="text-3xl font-bold">Miyashiro Aiko</h2>
+            <h2 className="text-2xl font-bold">Miyashiro Aiko</h2>
             <p>
               Hiking addict, self-starter, band member, Japanese fashion
               designer. Acting at the junction of simplicity and mathematics to
@@ -68,7 +68,7 @@ const OurStory = () => {
         </div>
         <div>
           <div className="flex flex-col justify-evenly h-60">
-            <h1 className="text-3xl font-bold text-center">
+            <h1 className="text-4xl font-bold text-center">
               Smooth textures feel cool on bare feet and skin.
             </h1>
             <p className="text-center">
@@ -92,6 +92,7 @@ export const Head: HeadFC = () => {
     <>
       <html lang="en" />
       <title>Our Story</title>
+      <body className="2xl:mx-auto max-w-screen-2xl" />
     </>
   );
 };
