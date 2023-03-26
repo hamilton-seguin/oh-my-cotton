@@ -28,9 +28,10 @@ const config: GatsbyConfig = {
         mode: "async",
         enableListener: true,
         preconnect: ["https://fonts.gstatic.com"],
-        web: [{
+        web: [
+          {
             name: "Rosario",
-            file: "https://fonts.googleapis.com/css2?family=Rosario:wght@400;700&display=swap",
+            file: "https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;700&display=swap",
           },
         ],
       },

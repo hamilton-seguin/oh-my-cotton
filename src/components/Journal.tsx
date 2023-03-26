@@ -12,7 +12,7 @@ export const Journal = () => {
     >
       <div className="flex flex-col px-10 mt-16 2xl:mt-[15%] mx-10 min-w-[25%] items-center h-0">
         <h1 className="text-3xl lg:text-4xl font-bold pb-auto p-3">Journal</h1>
-        <Link to="/#" className="text-end">
+        <Link to="/#" className="text-end underline">
           All news
         </Link>
       </div>
@@ -88,7 +88,11 @@ export const Journal = () => {
             </p>
           </div>
           <div className="snap-end shrink-0 flex items-start justify-center w-1/3 whitespace-nowrap mt-20 2xl:mt-[23%] mx-10">
-            <a href="#" className="text-center whitespace-normal" draggable={false}>
+            <a
+              href="#"
+              className="text-center whitespace-normal underline"
+              draggable={false}
+            >
               View all News
             </a>
           </div>

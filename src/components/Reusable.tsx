@@ -10,16 +10,18 @@ export const Reusable1 = () => {
         alt="we recyle, we go green"
         className="max-w-[49.4%]"
       />
-      <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly text-justify leading-7">
+      <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly leading-7 mb-28">
         <div className="text-3xl lg:text-4xl font-bold">
           We recycle, we go green
         </div>
         <p>
           Our products are made with recycled and ecological materials including
-          organic cotton - making us a green company. We are Sustainable
+          organic cotton - making us a green company. We are a Sustainable
           Business Award winner.
         </p>
-        <Link to="/#">Sustainability program</Link>
+        <Link to="/#" className="underline">
+          Sustainability program
+        </Link>
       </div>
     </div>
   );
@@ -33,12 +35,14 @@ export const Reusable2 = () => {
         alt="We know how to keep clothes in good condition"
         className="max-w-[49.4%]"
       />
-      <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly leading-7">
+      <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly leading-7 mb-28">
         <div className="text-3xl lg:text-4xl font-bold">
           We know how to keep clothes in good condition
         </div>
         <p>We have experience, we can share it.</p>
-        <Link to="/#">Product care</Link>
+        <Link to="/#" className="underline">
+          Product care
+        </Link>
       </div>
     </div>
   );

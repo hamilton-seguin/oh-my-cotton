@@ -3,13 +3,13 @@ import { HeadFC } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 
 const OurStory = () => {
   return (
     <Layout>
       <main>
-        {/**TODO:  */}
-        <div>BREADCRUMBS</div>
+        <Breadcrumbs url="" text="our story" />
         <div className="flex justify-between relative right-0 max-w-screen-2xl mt-10 ml-auto">
           <div className="flex flex-col max-w-md mx-auto px-10 justify-evenly text-justify leading-7">
             <h1 className="text-4xl font-bold"> About the designers </h1>

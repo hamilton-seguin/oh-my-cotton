@@ -27,13 +27,74 @@ html {
 body {
   font-family: "Rosario", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 19px;
   line-height: 1.75rem;
   color: #9f9f9f;
   background-color: #fcfcfc;
 }
-
 @tailwind components;
-@tailwind utilities;
+.white {
+  color: #fcfcfc;
+}
+.offset-text-left {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 0);
+}
+.offset-text-right {
+  position: absolute;
+  right: 25%;
+  transform: translate(50%, 0);
+}
+.offset-text-middle {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+.underline {
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.myBorder {
+  border-top: #fcfcfc 1rem solid;
+  border-bottom: #fcfcfc 1rem solid;
+  border-left: none;
+  border-right: none;
+}
+.myGrid {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 100px;
+  width: 100%;
+}
+.insideGrid {
+  display: flex;
+}
+#absoluteDiv {
+  height: 106.5vw;
+}
+.image1 {
+  top: 4vw;
+  z-index: 10;
+}
+.image2 {
+  right: 2vw;
+  width: 63.4%;
+}
+.image3 {
+  top: 40vw;
+  left: 2vw;
+  width: 39%;
+}
+.image3 video {
+  object-fit: fill;
+  aspect-ratio: auto;
+}
+.image4 {
+  top: 65vw;
+  right: 10vw;
+  width: 56%;
+}
 
+@tailwind utilities;

@@ -5,7 +5,10 @@ type DraggableProps = {
   children: ReactNode;
 };
 
-export const Draggable = ({ rootClass = "cursor-grab min-w-0  flex items-start", children }: DraggableProps) => {
+export const Draggable = ({
+  rootClass = "cursor-grab min-w-0  flex items-start",
+  children,
+}: DraggableProps) => {
   const ourRef = useRef<HTMLDivElement>(null);
   const [isMouseDown, setIsMouseDown] = useState(false);
   const mouseCoords = useRef({ startX: 0, scrollLeft: 0 });
@@ -27,6 +30,9 @@ export const Draggable = ({ rootClass = "cursor-grab min-w-0  flex items-start",
   };
   const handleDragOut = (e: MouseEvent<HTMLDivElement>) => {
     setIsMouseDown(false);
+    if (!ourRef.current) return;
+    const slider = ourRef.current.children[0] as HTMLDivElement;
+    slider.classList.remove("cursor-grabbing");
   };
   const handleDrag = (e: MouseEvent<HTMLDivElement>) => {
     if (!isMouseDown || !ourRef.current) return;
