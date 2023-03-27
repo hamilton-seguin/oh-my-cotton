@@ -15,7 +15,7 @@ export const Locations = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-3 m-auto min-w-[50%] gap-8 ml-12">
+      <div className="grid grid-cols-3 m-auto min-w-[50%] gap-8 mx-12">
         <div className="">
           <p>BARCELONA</p>
           <p>La Rambla 202</p>

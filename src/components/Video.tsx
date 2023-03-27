@@ -9,7 +9,6 @@ export const Video = ({ sourceMp4, sourceWebm }: VideoProps) => {
   return (
     <>
       <video
-        autoPlay
         loop
         muted
         preload="auto"

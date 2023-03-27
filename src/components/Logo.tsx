@@ -4,14 +4,18 @@ type logoProps = {
   className?: string;
   hexColor?: string;
   width?: string;
+  id?: string;
+  maxWidth?: boolean
 };
 
-export const Logo = ({ className, hexColor, width }: logoProps) => {
+export const Logo = ({ className, hexColor, width, id, maxWidth }: logoProps) => {
   return (
     <div className={className}>
       <svg
-        width={width || "302"}
-        height="100%"
+        id={id || ""}
+        width={width || "50vw"}
+        style={maxWidth ? {["maxWidth" as any]: "300px"} : undefined}
+        height="100%" 
         viewBox="0 0 302 31"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
         web: [
           {
             name: "Rosario",
-            file: "https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;700&display=swap",
+            file: "https://fonts.googleapis.com/css2?family=Rosario:wght@300;700&display=swap",
           },
         ],
       },
@@ -41,7 +41,7 @@ const config: GatsbyConfig = {
       options: {
         defaults: {
           formats: [`auto`, `webp`],
-          quality: 60,
+          quality: 70,
         },
       },
     },

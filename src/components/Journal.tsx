@@ -10,11 +10,15 @@ export const Journal = () => {
       id="news"
       className="flex mt-24 overflow-hidden min-w-3xl will-change-auto hover:will-change-scroll"
     >
-      <div className="flex flex-col px-10 mt-16 2xl:mt-[15%] mx-10 min-w-[25%] items-center h-0">
-        <h1 className="text-3xl lg:text-4xl font-bold pb-auto p-3">Journal</h1>
-        <Link to="/#" className="text-end underline">
-          All news
-        </Link>
+      <div className="flex flex-col mx-16 min-w-[25%] h-0">
+        <div>
+          <h1 className="text-3xl lg:text-4xl font-bold pb-3 ">
+            Journal
+          </h1>
+          <Link to="/#" className="underline">
+            All news
+          </Link>
+        </div>
       </div>
       <Draggable>
         <div
@@ -28,7 +32,7 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               OHMYCOTTON on the cover of Vogue Thailand
             </p>
           </div>
@@ -39,7 +43,7 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               OHMYCOTTON on the cover of L'UOMO Vogue
             </p>
           </div>
@@ -50,7 +54,7 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               Donate and win a day at journal atelier
             </p>
           </div>
@@ -61,7 +65,7 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               OHMYCOTTON on the cover of Vogue Thailand
             </p>
           </div>
@@ -72,7 +76,7 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               OHMYCOTTON on the cover of L'UOMO Vogue
             </p>
           </div>
@@ -83,14 +87,14 @@ export const Journal = () => {
               className="max-w-[25vw]"
               draggable={false}
             />
-            <p className="font-light text-sm py-8 text-center whitespace-normal">
+            <p className="font-light text-sm py-8 whitespace-normal">
               Donate and win a day at journal atelier
             </p>
           </div>
-          <div className="snap-end shrink-0 flex items-start justify-center w-1/3 whitespace-nowrap mt-20 2xl:mt-[23%] mx-10">
+          <div className="snap-end shrink-0 flex items-start justify-center w-1/3 whitespace-nowrap mt-2 mx-10">
             <a
               href="#"
-              className="text-center whitespace-normal underline"
+              className="whitespace-normal underline"
               draggable={false}
             >
               View all News
