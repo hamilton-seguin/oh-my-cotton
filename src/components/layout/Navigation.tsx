@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 import { Logo } from "../Logo";
@@ -17,10 +17,8 @@ export const Navigation = () => {
     const body = document.body;
     body.style.position = "fixed";
     body.style.top = `-${scrollY}`;
-    console.log("close is ", close);
 
-    //TODO: onChangeRoute relive fixed from body, mays utils funtion 
-
+    //TODO: onChangeRoute relive fixed from body, mays utils funtion
   };
   const closeMenu = () => {
     setclose(true);
@@ -32,24 +30,30 @@ export const Navigation = () => {
     body.style.position = "";
     body.style.top = "";
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
-    console.log("close is ", close);
   };
-  window.addEventListener("scroll", () => {
-    document.documentElement.style.setProperty(
-      "--scroll-y",
-      `${window.scrollY}px`
-    );
-  });
+
+  const isBrowser = typeof window !== "undefined";
+  if (isBrowser) {
+    window.addEventListener("scroll", () => {
+      document.documentElement.style.setProperty(
+        "--scroll-y",
+        `${window.scrollY}px`
+      );
+    });
+  }
 
   return (
     <nav id="Nav" className="myBorder bg-myWhite z-10 w-full">
-      <div className="flex items-center justify-center">
+      <div
+        className={`flex items-center justify-center  
+        lg:${ close ? "" : "pr-[15px]" }`} //TODO: fix margin
+      >
         <div className="lg:flex flex-1 justify-evenly hidden">
           <a href="#">Find Us</a>
           <a href="#">Product Care</a>
           <a href="#">Sustainability</a>
         </div>
-        <div className="flex">
+        <div className="flex mr-[0.5vw] 2xl:mr-[1.5vw]">
           <Link to="/" title="Product care">
             <Logo maxWidth />
           </Link>

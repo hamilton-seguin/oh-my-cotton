@@ -24,7 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <main className="relative">
         <div id="white-rect"></div>
-        <Logo id="title" />
+        <Logo id="title" className="mr-[0.5vw] 2xl:mr-[1.5vw]"/>
 
         <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
         <div className="flex justify-between my-16 relative">
