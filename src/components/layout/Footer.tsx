@@ -27,7 +27,7 @@ export const Footer = () => {
           <Link to="#privacyPolicy">Privacy policy</Link>
         </div>
         <div className="flex flex-col justify-between gap-8">
-          <Link to="/#findUs">Find us</Link>
+          <Link to="/#find-us">Find us</Link>
           <Link to="#productcare">Product Care</Link>
           <Link to="#sustainability">Sustainability</Link>
           <Link to="/projects/self-confidence">Projects</Link>

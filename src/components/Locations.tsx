@@ -3,14 +3,14 @@ import React from "react";
 
 export const Locations = () => {
   return (
-    <div id="findUs" className="flex m-10 mx-16">
+    <div id="find-us" className="flex m-10 mx-16">
       <div className="flex flex-col flex-1 justify-between min-w-[50%]">
         <div className="max-w-xs  leading-9">
           <h1 className="text-3xl lg:text-4xl font-bold mb-8">Locations</h1>
           <p>Our pieces are at unique concept stores only.</p>
         </div>
         <div className="">
-          <Link to="#findUs" className="underline">
+          <Link to="#find-us" className="underline">
             Find us
           </Link>
         </div>
