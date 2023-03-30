@@ -2,7 +2,7 @@ import { HeadFC } from "gatsby";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import { Video } from "../../components/Video";
 import { Logo } from "../../components/Logo";
 import { Breadcrumbs } from "../../components/Breadcrumbs";

@@ -16,8 +16,9 @@ export const Reusable1 = () => {
         </div>
         <p>
           Our products are made with recycled and ecological materials including
-          organic cotton - making us a green company. We are a Sustainable
-          Business Award winner.
+          organic cotton - making us a green company.
+          <br />
+          We are a Sustainable Business Award winner.
         </p>
         <Link to="/#" className="underline">
           Sustainability program

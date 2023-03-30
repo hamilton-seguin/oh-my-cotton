@@ -1,6 +1,6 @@
 import React from "react";
-import { Footer } from "./layout/Footer";
-import { Navigation } from "./layout/Navigation";
+import { Footer } from "./Footer";
+import { Navigation } from "./Navigation";
 
 type LayoutProps = {
   children: JSX.Element;

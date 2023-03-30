@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { HeadFC, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import { Journal } from "../components/Journal";
 import { Reusable1, Reusable2 } from "../components/Reusable";
 import { Locations } from "../components/Locations";
@@ -15,7 +15,8 @@ import main4mp4 from "../assets/main4.mp4";
 import main4webm from "../assets/main4.webm";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const { initialRender, toggleInitialRender } = useContext(InitialRenderContext);
+  const { initialRender, toggleInitialRender } =
+    useContext(InitialRenderContext);
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
@@ -37,7 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <main className="relative">
-        {initialRender && (<OpeningAnimation />)}
+        {initialRender && <OpeningAnimation />}
 
         <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
         <div className="flex justify-between my-16 relative">
@@ -70,9 +71,11 @@ const IndexPage: React.FC<PageProps> = () => {
           <h1 className="text-3xl lg:text-4xl font-bold">Quality of Living</h1>
           <p className="text-justify my-8">
             Take time for life's little moments. Sinking in your favourite
-            wardrobe. At OHMYCOTTON, your daily rituals are at the heart of our
-            design. We make clothing to give you your best day, every day. Our
-            goal is to make people proud and happy to live with our products.
+            wardrobe.
+            <br />
+            At OHMYCOTTON, your daily rituals are at the heart of our design. We
+            make clothing to give you your best day, every day. Our goal is to
+            make people proud and happy to live with our products.
           </p>
           <Link to="/our-story" className="underline">
             Our story
