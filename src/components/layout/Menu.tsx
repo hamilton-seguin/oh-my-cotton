@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "gatsby";
 import { InitialRenderContext, menuStateEnum } from "../../utils/context";
+
 
 type MenuProps = {
   closeMenu: () => void;
@@ -8,16 +9,18 @@ type MenuProps = {
 
 export const Menu = ({ closeMenu }: MenuProps) => {
   const { menuState, setMenuState } = useContext(InitialRenderContext);
-  const menu = document?.getElementById("menu");
 
-  if (menuState === "closeMenu") {
-    menu?.addEventListener("animationend", () => {
-      if (menu?.classList.contains("closeMenu")) {
-        setMenuState(menuStateEnum.isDefault);
-      }
-      return () => menu?.removeEventListener("animationend", () => {});
-    });
-  }
+  const isBrowser = typeof document !== "undefined"
+    const menu = document?.getElementById("menu");
+    if (isBrowser && menuState === "closeMenu") {
+      menu?.addEventListener("animationend", () => {
+        if (menu?.classList.contains("closeMenu")) {
+          setMenuState(menuStateEnum.isDefault);
+        }
+        return () => menu?.removeEventListener("animationend", () => {});
+      });
+    }
+
 
   return (
     <>
