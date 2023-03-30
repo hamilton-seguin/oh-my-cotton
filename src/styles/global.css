@@ -167,7 +167,7 @@ body {
   animation-iteration-count: 1, 1, 1;
   animation-fill-mode: forwards, forwards, forwards;
 }
-  /* mr-[0.5vw] 2xl:mr-[1.5vw] */
+/* mr-[0.5vw] 2xl:mr-[1.5vw] */
 #title {
   position: absolute;
   height: fit-content;
@@ -196,7 +196,7 @@ body {
 .openMenu {
   animation-name: menu-in, reveal;
   animation-duration: 750ms, 750ms;
-  animation-delay: 0, 10s;
+  animation-delay: 0s, 10s;
   animation-timing-function: ease, ease;
   animation-fill-mode: forwards, forwards;
 }
@@ -204,7 +204,7 @@ body {
 .closeMenu {
   animation-name: menu-out, hidden;
   animation-duration: 750ms, 750ms;
-  animation-delay: 0, 10s;
+  animation-delay: 0s, 10s;
   animation-timing-function: ease, ease;
   animation-fill-mode: forwards, forwards;
 }
@@ -240,9 +240,12 @@ body {
     visibility: visible;
   }
 }
+
+/** Media queries */
 @media (min-width: 1536px) {
   #title {
     right: 1.5vw;
   }
 }
+
 @tailwind utilities;

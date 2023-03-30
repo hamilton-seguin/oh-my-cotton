@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { HeadFC, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -7,24 +7,37 @@ import { Journal } from "../components/Journal";
 import { Reusable1, Reusable2 } from "../components/Reusable";
 import { Locations } from "../components/Locations";
 import { Video } from "../components/Video";
+import { OpeningAnimation } from "../components/OpeningAnimation";
+
+import { InitialRenderContext } from "../utils/context";
 
 import main4mp4 from "../assets/main4.mp4";
 import main4webm from "../assets/main4.webm";
-import { Logo } from "../components/Logo";
 
 const IndexPage: React.FC<PageProps> = () => {
+  const { initialRender, toggleInitialRender } = useContext(InitialRenderContext);
 
   useEffect(() => {
-    let nav = document?.getElementById("Nav");
-    nav?.classList.add("absolute");
-    nav ? nav.setAttribute("style", "opacity: 0; animation: show-nav 1s 4s forwards;") : "";
+    const timeOut = setTimeout(() => {
+      toggleInitialRender(false);
+    }, 10000);
+    const nav = document?.getElementById("Nav");
+    if (nav) {
+      nav?.classList.add("absolute");
+      initialRender
+        ? nav.setAttribute(
+            "style",
+            "opacity: 0; animation: show-nav 1s 4s forwards;"
+          )
+        : nav.setAttribute("style", "opacity: 1;");
+    }
+    return () => clearTimeout(timeOut);
   }, []);
 
   return (
     <Layout>
       <main className="relative">
-        <div id="white-rect"></div>
-        <Logo id="title" className="mr-[0.5vw] 2xl:mr-[1.5vw]"/>
+        {initialRender && (<OpeningAnimation />)}
 
         <StaticImage alt="background" src="../images/backgroundMain.jpeg" />
         <div className="flex justify-between my-16 relative">

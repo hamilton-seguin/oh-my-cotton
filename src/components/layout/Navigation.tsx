@@ -1,37 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 import { Logo } from "../Logo";
-import { StaticImage } from "gatsby-plugin-image";
+import { Menu } from "./Menu";
+
+import { useIsDesktop } from "../../utils/utils";
+import { InitialRenderContext, menuStateEnum } from "../../utils/context";
 
 export const Navigation = () => {
-  const [close, setclose] = useState<boolean>(true);
+  const isDesktop = useIsDesktop();
+  const { menuState, setMenuState } = useContext(InitialRenderContext);
 
   const openMenu = () => {
-    setclose(false);
-    document.getElementById("menu")?.classList.remove("closeMenu");
-    document.getElementById("menu")?.classList.add("openMenu");
+    setMenuState(menuStateEnum.isOpen);
+
     // against body scroll
     const scrollY =
       document.documentElement.style.getPropertyValue("--scroll-y");
     const body = document.body;
     body.style.position = "fixed";
+    // set padding if desktop
+    isDesktop && (body.style.marginRight = "14px");
     body.style.top = `-${scrollY}`;
-
-    //TODO: onChangeRoute relive fixed from body, mays utils funtion
   };
+
   const closeMenu = () => {
-    setclose(true);
-    document.getElementById("menu")?.classList.remove("openMenu");
-    document.getElementById("menu")?.classList.add("closeMenu");
+    setMenuState(menuStateEnum.isClose);
+
     // against body scroll
     const body = document.body;
     const scrollY = body.style.top;
     body.style.position = "";
+    body.style.marginRight = "";
     body.style.top = "";
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
   };
 
+  //Todo reset scrollY on new route
   const isBrowser = typeof window !== "undefined";
   if (isBrowser) {
     window.addEventListener("scroll", () => {
@@ -44,17 +50,14 @@ export const Navigation = () => {
 
   return (
     <nav id="Nav" className="myBorder bg-myWhite z-10 w-full">
-      <div
-        className={`flex items-center justify-center  
-        lg:${ close ? "" : "pr-[15px]" }`} //TODO: fix margin
-      >
+      <div className="flex items-center justify-center">
         <div className="lg:flex flex-1 justify-evenly hidden">
           <a href="#">Find Us</a>
           <a href="#">Product Care</a>
           <a href="#">Sustainability</a>
         </div>
         <div className="flex mr-[0.5vw] 2xl:mr-[1.5vw]">
-          <Link to="/" title="Product care">
+          <Link to="/" title="Oh My Cotton Title" {...(menuState === "openMenu" ? { onClick: closeMenu } : {})}>
             <Logo maxWidth />
           </Link>
         </div>
@@ -68,9 +71,9 @@ export const Navigation = () => {
           <a href="/#news">News</a>
           <a href="#contactUs">Contact</a>
         </div>
-        {close ? (
+        {menuState === "closeMenu" || menuState === "default" ? (
           <button
-            id="toggle"
+            id="set"
             className="lg:hidden absolute right-[3vw] min-w-[25px] w-[7vw] flex"
             onClick={openMenu}
           >
@@ -78,7 +81,7 @@ export const Navigation = () => {
           </button>
         ) : (
           <button
-            id="toggle"
+            id="set"
             className="lg:hidden absolute right-[6vw] min-w-[15px] w-[4vw] flex"
             onClick={closeMenu}
           >
@@ -86,28 +89,7 @@ export const Navigation = () => {
           </button>
         )}
       </div>
-      <div id="menu" className="closeMenu">
-        <div>
-          <div className="flex flex-col bg-myWhite px-4 pt-4 pb-16 justify-evenly align-start h-[100vh] font-bold">
-            <a href="#">Find us</a>
-            <a href="#">Product care</a>
-            <a href="#">Sustainability</a>
-            <Link to="/projects/self-confidence">Projects</Link>
-            <Link to="/our-story">Our story</Link>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-            <div className="border-t-[2px] border-grey w-full"></div>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <div className="border-t-[2px] border-grey w-full"></div>
-            <div>
-              <p className="pb-4">Contact:</p>
-              <p className="font-light">office@ohmycotton.com</p>
-              <p className="font-light">3465 785 552</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Menu closeMenu={closeMenu} />
     </nav>
   );
 };
