@@ -10,9 +10,9 @@ type MenuProps = {
 export const Menu = ({ closeMenu }: MenuProps) => {
   const { menuState, setMenuState } = useContext(InitialRenderContext);
 
-  const isBrowser = typeof document !== "undefined"
+  useEffect(() => {
     const menu = document?.getElementById("menu");
-    if (isBrowser && menuState === "closeMenu") {
+    if (menuState === "closeMenu") {
       menu?.addEventListener("animationend", () => {
         if (menu?.classList.contains("closeMenu")) {
           setMenuState(menuStateEnum.isDefault);
@@ -20,7 +20,7 @@ export const Menu = ({ closeMenu }: MenuProps) => {
         return () => menu?.removeEventListener("animationend", () => {});
       });
     }
-
+  }, [menuState]);
 
   return (
     <>
