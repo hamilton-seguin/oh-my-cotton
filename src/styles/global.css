@@ -71,31 +71,6 @@ body {
 .insideGrid {
   display: flex;
 }
-#absoluteDiv {
-  height: 106.5vw;
-}
-.image1 {
-  top: 4vw;
-  z-index: 10;
-}
-.image2 {
-  right: 2vw;
-  width: 63.4%;
-}
-.image3 {
-  top: 40vw;
-  left: 2vw;
-  width: 39%;
-}
-.image3 video {
-  object-fit: fill;
-  aspect-ratio: auto;
-}
-.image4 {
-  top: 65vw;
-  right: 10vw;
-  width: 56%;
-}
 
 /** Animation */
 
@@ -247,5 +222,31 @@ body {
     right: 1.5vw;
   }
 }
-
+@media (min-width: 1024px) {
+  #absoluteDiv {
+    height: 106.5vw;
+  }
+  .image1 {
+    top: 4vw;
+    z-index: 10;
+  }
+  .image2 {
+    right: 2vw;
+    width: 63.4%;
+  }
+  .image3 {
+    top: 40vw !important;
+    left: 2vw;
+    width: 39%;
+  }
+  .image3 video {
+    object-fit: fill;
+    aspect-ratio: auto;
+  }
+  .image4 {
+    top: 65vw !important;
+    right: 10vw;
+    width: 56%;
+  }
+}
 @tailwind utilities;

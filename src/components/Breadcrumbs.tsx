@@ -10,7 +10,7 @@ type BreadcrumbsProps = {
 export const Breadcrumbs = ({ url, text, text2 }: BreadcrumbsProps) => {
   return (
     <>
-      <div className="uppercase ml-[10%] mt-12">
+      <div className="uppercase ml-4 mt-12 mb-4 lg:ml-[10%] text-base lg:text-sm">
         <Link to="/">HOME</Link>
         {url && (
           <Link to={`/${url}`}>

@@ -17,27 +17,39 @@ const SelfConfidence = () => {
     <Layout>
       <main>
         <Breadcrumbs text="tribute to self-confidence" />
-        <Video sourceMp4={selfVideo1Mp4} />
-        <div className="relative w-full mt-8" id="absoluteDiv">
-          <div className="image1 w-[49%] absolute z-10">
+        <div className="max-h-[80vh]">
+          <Video sourceMp4={selfVideo1Mp4} minHeight />
+        </div>
+        <div
+          className="relative w-full mt-16 text-base lg:text-lg"
+          id="absoluteDiv"
+        >
+          <div className="image1 relative mr-4 lg:w-[49%] lg:absolute z-40">
             <StaticImage src="../../images/self1.jpeg" alt="how to care" />
-            <p className="text-center absolute inset-x-0 bottom-[6%] white underline">
+            <p className="text-center absolute inset-x-0 bottom-[4%] lg:bottom-[6%] white underline">
               How to care
             </p>
           </div>
-          <div id="thisImage" className="image2 absolute">
-            <StaticImage src="../../images/self2.jpeg" alt="Ode to the sun" />
-            <p className="text-center absolute inset-x-0 bottom-[25%] white underline">
+          <div
+            id="thisImage"
+            className="image2 ml-4 relative lg:absolute max-h-[75vh] z-30 lg:z-0 -top-8 lg:top-0"
+          >
+            <StaticImage
+              src="../../images/self2.jpeg"
+              alt="Ode to the sun"
+              className="max-h-[75vh] lg:max-h-min min-h-[50vh]"
+            />
+            <p className="text-center absolute inset-x-0 bottom-[4%] lg:bottom-[10%] white underline">
               Ode to the sun
             </p>
           </div>
-          <div id="videoDiv" className="image3 absolute">
-            <Video sourceMp4={selfVideo2Mp4} />
+        <div id="videoDiv" className="image3 relative mr-4 z-20 -top-16 lg:absolute">
+            <Video sourceMp4={selfVideo2Mp4} className="min-h-[105vw] lg:min-h-max object-top"/>
             <p className="text-center absolute inset-x-0 bottom-[4%] white underline">
               Go green
             </p>
           </div>
-          <div className="image4 absolute">
+          <div className="image4 -top-20 ml-4 lg:z-30 relative lg:absolute">
             <StaticImage
               src="../../images/self3.jpeg"
               alt="We design for you"

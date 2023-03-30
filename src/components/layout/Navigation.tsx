@@ -14,9 +14,13 @@ export const Navigation = () => {
 
   const openMenu = () => {
     setMenuState(menuStateEnum.isOpen);
-
+    //TODO: body fixed position in small screen size makes menu open change size of title and button
+    //TODO     => might fixe by itself after phone size is done
     const body = document.body;
     body.style.position = "fixed";
+    // const nav = document.getElementById("Nav");
+    // nav && (nav.style.marginRight = "14px");
+    // body.style.width = "100vw";
     // set padding if desktop
     isDesktop && (body.style.marginRight = "14px");
     // against body scroll
@@ -29,6 +33,7 @@ export const Navigation = () => {
     setMenuState(menuStateEnum.isClose);
     const body = document.body;
     body.style.position = "";
+    // body.style.width = "";
     // clear padding if desktop
     body.style.marginRight = "";
 

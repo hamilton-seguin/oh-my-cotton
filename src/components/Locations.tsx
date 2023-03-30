@@ -3,19 +3,19 @@ import React from "react";
 
 export const Locations = () => {
   return (
-    <div id="find-us" className="flex m-10 mx-16">
-      <div className="flex flex-col flex-1 justify-between min-w-[50%]">
-        <div className="max-w-xs  leading-9">
+    <div id="find-us" className="flex mx-4 flex-col lg:flex-row lg:m-10 lg:mx-16 overflow-x-hidden">
+      <div className="flex flex-col flex-1 justify-between lg:min-w-[50%]">
+        <div className="lg:max-w-xs leading-9 mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold mb-8">Locations</h1>
           <p>Our pieces are at unique concept stores only.</p>
         </div>
-        <div className="">
+        <div className="hidden lg:block">
           <Link to="#find-us" className="underline">
             Find us
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-3 m-auto min-w-[50%] gap-8 mx-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:m-auto min-w-[50%] gap-8 lg:mx-12">
         <div className="">
           <p>BARCELONA</p>
           <p>La Rambla 202</p>
