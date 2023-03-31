@@ -20,7 +20,7 @@ export const Video = ({
   return (
     <>
       <video
-        // autoPlay
+        autoPlay
         loop
         muted
         preload="auto"

@@ -4,8 +4,8 @@ import React from "react";
 const date = new Date().getFullYear();
 export const Footer = () => {
   return (
-    <footer id="contactUs" className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 mt-16 lg:flex-row mb-10">
-      <div className="flex flex-col flex-1 justify-between relative lg:max-w-[50vw] px-4 lg:px-16 xl:px-[8%]">
+    <footer id="contactUs" className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 mt-16 mb-10">
+      <div className="flex flex-col justify-between relative lg:max-w-[50vw] px-4 lg:px-16 xl:px-[8%]">
         <div className="max-w-xs mb-8 leading-9">
           <h1 className="text-3xl lg:text-4xl font-bold mb-8">
             Contact us to get a special offer
