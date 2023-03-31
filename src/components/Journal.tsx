@@ -8,9 +8,9 @@ export const Journal = () => {
   return (
     <div
       id="news"
-      className="flex flex-col ml-4 lg:mt-24 overflow-hidden min-w-3xl will-change-auto hover:will-change-scroll lg:flex-row"
+      className="flex flex-col ml-4 lg:mt-24 overflow-hidden min-w-3xl will-change-auto hover:will-change-scroll lg:flex-row lg:ml-0"
     >
-      <div className="flex flex-col lg:mx-16 min-w-[25vw] lg:h-0">
+      <div className="flex flex-col lg:mx-16 xl:ml-[4%] min-w-[20vw] lg:h-0">
         <div className="mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold mb-8 lg:pb-3 ">
             Journal

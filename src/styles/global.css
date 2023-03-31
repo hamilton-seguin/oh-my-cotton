@@ -240,7 +240,7 @@ body {
     width: 39%;
   }
   .image3 video {
-    object-fit: fill;
+    object-fit: contain;
     aspect-ratio: auto;
   }
   .image4 {

@@ -20,13 +20,12 @@ export const Video = ({
   return (
     <>
       <video
-        autoPlay
+        // autoPlay
         loop
         muted
         preload="auto"
         className={`w-full aspect-video h-full object-cover ${
-          minHeight ? "min-h-[75vh]" : ""} ${className}
-         max-h-[90vh]`}
+          minHeight ? "min-h-[75vh]" : ""} max-h-[90vh] ${className}`}
         height={height}
         width={width}
       >

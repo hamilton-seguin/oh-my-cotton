@@ -32,19 +32,27 @@ const SelfConfidence = () => {
           </div>
           <div
             id="thisImage"
-            className="image2 ml-4 relative lg:absolute max-h-[75vh] z-30 lg:z-0 -top-8 lg:top-0"
+            className="image2 ml-4 relative lg:absolute max-h-[75vh] lg:min-h-fit z-30 lg:z-0 -top-8 lg:top-0"
           >
-            <StaticImage
-              src="../../images/self2.jpeg"
-              alt="Ode to the sun"
-              className="max-h-[75vh] lg:max-h-min min-h-[50vh]"
-            />
-            <p className="text-center absolute inset-x-0 bottom-[4%] lg:bottom-[10%] white underline">
-              Ode to the sun
-            </p>
+            <div className="relative">
+              <StaticImage
+                src="../../images/self2.jpeg"
+                alt="Ode to the sun"
+                className="max-h-[75vh] lg:max-h-min min-h-[50vh]"
+              />
+              <p className="text-center absolute inset-x-0 bottom-[6%] lg:bottom-[25%] white underline">
+                Ode to the sun
+              </p>
+            </div>
           </div>
-        <div id="videoDiv" className="image3 relative mr-4 z-20 -top-16 lg:absolute">
-            <Video sourceMp4={selfVideo2Mp4} className="min-h-[105vw] lg:min-h-max object-top"/>
+          <div
+            id="videoDiv"
+            className="image3 relative mr-4 z-20 -top-16 lg:absolute"
+          >
+            <Video
+              sourceMp4={selfVideo2Mp4}
+              className="min-h-[75vh] max-h-[100vw] md:min-h-[76vh] lg:min-h-max object-top lg:object-contain"
+            />
             <p className="text-center absolute inset-x-0 bottom-[4%] white underline">
               Go green
             </p>

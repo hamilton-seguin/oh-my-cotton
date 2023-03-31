@@ -44,7 +44,8 @@ const IndexPage: React.FC<PageProps> = () => {
           alt="background"
           src="../images/backgroundMain.jpeg"
           className="min-h-[75vh] max-h-[90vh]"
-          imgStyle={{ objectPosition: "bottom" }}
+          loading="eager"
+          objectPosition={"bottom"}
         />
         <SideToSide />
         <div className="flex flex-col lg:justify-center mx-4 lg:w-[50%] lg:mx-auto lg:min-h-[30vh] text-justify my-16 lg:my-24">

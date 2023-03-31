@@ -8,7 +8,7 @@ export const Reusable1 = () => {
       <StaticImage
         src="../images/main5.jpeg"
         alt="we recyle, we go green"
-        className="max-h-[40vh] lg:max-w-[49.4%]"
+        className="max-h-[40vh] lg:max-w-[49%] xl:max-h-[60vh]"
       />
       <div className="flex flex-col mx-4 min-h-[20vh] max-h-[80vh] justify-evenly leading-7 mb-16 lg:max-w-md lg:mx-auto lg:px-10">
         <div className="text-3xl lg:text-4xl font-bold">
@@ -34,7 +34,7 @@ export const Reusable2 = () => {
       <StaticImage
         src="../images/main6.jpeg"
         alt="We know how to keep clothes in good condition"
-        className="max-h-[40vh] lg:max-w-[49.4%]"
+        className="max-h-[40vh] lg:max-w-[49%] xl:max-h-[60vh]"
       />
       <div className="flex flex-col mt-8 mx-4 min-h-[20vh] justify-evenly leading-7 lg:max-w-md lg:mx-auto lg:px-10 ">
         <div className="text-3xl lg:text-4xl font-bold">
