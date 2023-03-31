@@ -1,7 +1,7 @@
 import React from "react";
 
 type VideoProps = {
-  sourceMp4?: string;
+  sourceMp4: string;
   sourceWebm?: string;
   height?: string;
   width?: string;
@@ -23,15 +23,14 @@ export const Video = ({
         autoPlay
         loop
         muted
+        playsInline
         preload="auto"
         className={`w-full aspect-video h-full object-cover ${
           minHeight ? "min-h-[75vh]" : ""} max-h-[90vh] ${className}`}
         height={height}
         width={width}
-      >
-        <source src={sourceMp4} type="video/mp4" />
-        <source src={sourceWebm} type="video/webm" />
-      </video>
+        src={sourceMp4}
+      />
     </>
   );
 };
