@@ -85,7 +85,7 @@ export const Head: HeadFC = () => {
     <>
       <html lang="en" />
       <title>Home Test</title>
-      <body className="2xl:mx-auto max-w-screen-3xl max-w-screen overflow-x-hidden" />
+      <body className="max-w-[100vw]" />
     </>
   );
 };

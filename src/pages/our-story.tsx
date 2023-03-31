@@ -12,7 +12,7 @@ const OurStory = () => {
         <Breadcrumbs url="" text="our story" />
         <div className="flex mt-8 lg:mt-10 flex-col lg:flex-row min-h-min mx-4 lg:mx-0">
           <div className="lg:grid lg:grid-cols-2 lg:auto-rows-min flex flex-col text-justify leading-7 min-h-fit lg:max-h-min lg:min-h-[49vw]">
-            <h1 className="text-4xl font-bold lg:px-16 xl:px-[8%] text-start">
+            <h1 className="text-3xl lg:text-4xl font-bold lg:px-16 xl:px-[8%] text-start">
               About the designers
             </h1>
             <h2 className="lg:col-start-1 font-bold text-2xl lg:px-16 xl:px-[8%] my-8">

@@ -24,8 +24,8 @@ export const Menu = ({ closeMenu }: MenuProps) => {
 
   return (
     <>
-      <div id="menu" className={menuState}>
-        <div className="flex flex-col bg-myWhite px-4 pt-4 pb-16 justify-evenly align-start h-[100vh] font-bold">
+      <div id="menu" className={`${menuState} top-10 md:top-[60px]`}>
+        <div className="flex flex-col bg-myWhite px-4 pt-4 pb-16 justify-evenly overflow-y-scroll align-start h-[100vh] font-bold min-h-max">
           <Link to="/#find-us" onClick={closeMenu}>
             Find us
           </Link>
@@ -48,6 +48,8 @@ export const Menu = ({ closeMenu }: MenuProps) => {
             <p className="font-light">office@ohmycotton.com</p>
             <p className="font-light">3465 785 552</p>
           </div>
+
+
         </div>
       </div>
     </>

@@ -14,15 +14,12 @@ export const Navigation = () => {
 
   const openMenu = () => {
     setMenuState(menuStateEnum.isOpen);
-    //TODO: body fixed position in small screen size makes menu open change size of title and button
-    //TODO     => might fixe by itself after phone size is done
     const body = document.body;
     body.style.position = "fixed";
-    // const nav = document.getElementById("Nav");
-    // nav && (nav.style.marginRight = "14px");
-    // body.style.width = "100vw";
+
     // set padding if desktop
     isDesktop && (body.style.marginRight = "14px");
+    
     // against body scroll
     const scrollY =
       document.documentElement.style.getPropertyValue("--scroll-y");
@@ -33,7 +30,7 @@ export const Navigation = () => {
     setMenuState(menuStateEnum.isClose);
     const body = document.body;
     body.style.position = "";
-    // body.style.width = "";
+
     // clear padding if desktop
     body.style.marginRight = "";
 
@@ -55,7 +52,7 @@ export const Navigation = () => {
   }
 
   return (
-    <nav id="Nav" className="myBorder bg-myWhite z-10 w-full">
+    <nav id="Nav" className="myBorder bg-myWhite z-10 w-full max-w-[100vw]">
       <div className="flex items-center justify-center">
         <div className="lg:flex flex-1 justify-evenly hidden">
           <a href="/#find-us">Find Us</a>
