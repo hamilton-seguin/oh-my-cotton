@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { HeadFC, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -8,16 +8,18 @@ import { Reusable1, Reusable2 } from "../components/Reusable";
 import { Locations } from "../components/Locations";
 import { Video } from "../components/Video";
 import { OpeningAnimation } from "../components/OpeningAnimation";
+import { SideToSide } from "../components/SideToSide";
 
 import { InitialRenderContext } from "../utils/context";
+import { useIsDesktop } from "../utils/utils";
 
 import main4mp4 from "../assets/main4.mp4";
 import main4webm from "../assets/main4.webm";
-import { SideToSide } from "../components/SideToSide";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { initialRender, toggleInitialRender } =
     useContext(InitialRenderContext);
+  const isDesktop = useIsDesktop();
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
@@ -25,21 +27,21 @@ const IndexPage: React.FC<PageProps> = () => {
     }, 10000);
     const nav = document?.getElementById("Nav");
     if (nav) {
-      nav?.classList.add("absolute");
-      initialRender
-        ? nav.setAttribute(
-            "style",
-            "opacity: 0; animation: show-nav 1s 4s forwards;"
-          )
-        : nav.setAttribute("style", "opacity: 1;");
+      nav?.classList.add("absolute", "opacity-0");
+      if (isDesktop !== undefined) {
+        console.log("isDesktop in useEffect", isDesktop);
+        initialRender && isDesktop === true
+          ? nav.setAttribute("style", "animation: show-nav 1s 4s forwards;")
+          : nav.setAttribute("style", "opacity: 1;");
+      }
     }
     return () => clearTimeout(timeOut);
-  }, []);
+  }, [isDesktop]);
 
   return (
     <Layout>
       <main className="relative">
-        {initialRender && <OpeningAnimation />}
+        {initialRender && isDesktop && <OpeningAnimation />}
         <StaticImage
           alt="background"
           src="../images/backgroundMain.jpeg"
@@ -63,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </Link>
         </div>
         <div className="relative min-h-[75vh] max-h-[90vh]">
-          <Video sourceMp4={main4mp4} sourceWebm={main4webm} minHeight/>
+          <Video sourceMp4={main4mp4} sourceWebm={main4webm} minHeight />
           <div className="text-center absolute inset-x-0 bottom-[10%] lg:bottom-[7%] white">
             <p>We sew, we customize</p>
             <p className="underline">For you</p>

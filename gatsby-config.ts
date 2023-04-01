@@ -27,7 +27,7 @@ const config: GatsbyConfig = {
       options: {
         mode: "async",
         enableListener: true,
-        preconnect: ["https://fonts.gstatic.com"],
+        preconnect: ["https://fonts.googleapis.com"],
         web: [
           {
             name: "Rosario",
