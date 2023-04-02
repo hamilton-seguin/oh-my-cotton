@@ -25,7 +25,7 @@ export const Menu = ({ closeMenu }: MenuProps) => {
   return (
     <>
       <div id="menu" className={`${menuState} top-10 md:top-[60px]`}>
-        <div className="flex flex-col bg-myWhite px-4 pt-4 pb-16 justify-evenly overflow-y-scroll align-start h-[100vh] font-bold min-h-max">
+        <div className="flex flex-col bg-myWhite px-4 pt-4 pb-24 sm:pb-40 justify-evenly overflow-y-scroll align-start h-[100vh] font-bold min-h-max text-sm sm:text-[19px]">
           <Link to="/#find-us" onClick={closeMenu}>
             Find us
           </Link>

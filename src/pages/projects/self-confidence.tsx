@@ -59,7 +59,7 @@ const SelfConfidence = () => {
           </div>
           <div className="image4 -top-20 ml-4 lg:z-30 relative lg:absolute">
             <StaticImage
-              src="../../images/self3.jpeg"
+              src="../../images/main3.jpeg"
               alt="We design for you"
             />
             <p className="text-center absolute inset-x-0 bottom-[6%] white underline">
