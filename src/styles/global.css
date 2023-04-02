@@ -107,7 +107,7 @@ body {
   100% {
     transform: translateY(0);
     top: 16px;
-    width: 300px;
+    width: 350px;
   }
 }
 @keyframes delete-rect-title {
@@ -142,7 +142,6 @@ body {
   animation-iteration-count: 1, 1, 1;
   animation-fill-mode: forwards, forwards, forwards;
 }
-/* mr-[0.5vw] 2xl:mr-[1.5vw] */
 #title {
   position: absolute;
   height: fit-content;

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import { HeadFC, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -28,8 +28,8 @@ const IndexPage: React.FC<PageProps> = () => {
     const nav = document?.getElementById("Nav");
     if (nav) {
       nav?.classList.add("absolute", "opacity-0");
+      
       if (isDesktop !== undefined) {
-        console.log("isDesktop in useEffect", isDesktop);
         initialRender && isDesktop === true
           ? nav.setAttribute("style", "animation: show-nav 1s 4s forwards;")
           : nav.setAttribute("style", "opacity: 1;");

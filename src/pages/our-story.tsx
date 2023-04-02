@@ -44,6 +44,7 @@ const OurStory = () => {
                 aspectRatio={1 / 1}
                 className="max-h-[70vh] lg:max-h-fit lg:max-w-[49vw]"
                 placeholder={"none"}
+                objectPosition={"top"}
               />
             </div>
           </div>
@@ -56,6 +57,7 @@ const OurStory = () => {
                 alt="ohmycotton designer Miyashiro Aiko"
                 aspectRatio={1 / 1}
                 className="max-h-[70vh] lg:max-h-fit lg:max-w-[49vw]"
+                objectPosition={"top"}
               />
             </div>
             <h2 className="lg:col-start-2 font-bold text-2xl lg:px-16 xl:px-[8%] mb-8 order-first">Miyashiro Aiko</h2>
