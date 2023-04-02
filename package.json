@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@nathanpate/gatsby-omni-font-loader": "^2.0.5",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.8.0",

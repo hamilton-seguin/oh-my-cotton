@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
-      resolve: "gatsby-omni-font-loader",
+      resolve: "@nathanpate/gatsby-omni-font-loader",
       options: {
         mode: "async",
         enableListener: true,
