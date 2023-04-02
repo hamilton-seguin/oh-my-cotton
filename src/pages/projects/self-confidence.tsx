@@ -8,9 +8,8 @@ import { Logo } from "../../components/Logo";
 import { Breadcrumbs } from "../../components/Breadcrumbs";
 
 import selfVideo1Mp4 from "../../assets/selfVideo1.mp4";
-import selfVideo1Webm from "../../assets/selfVideo1.webm";
 import selfVideo2Mp4 from "../../assets/selfVideoTrim2.mp4";
-import selfVideo2Webm from "../../assets/selfVideo2.webm";
+
 
 const SelfConfidence = () => {
   return (

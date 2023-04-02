@@ -29,7 +29,7 @@ export const Video = ({
           minHeight ? "min-h-[75vh]" : ""} max-h-[90vh] ${className}`}
         height={height}
         width={width}
-        src={sourceMp4}
+        src={sourceWebm || sourceMp4}
       />
     </>
   );
