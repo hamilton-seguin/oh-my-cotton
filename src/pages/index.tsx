@@ -28,7 +28,7 @@ const IndexPage: React.FC<PageProps> = () => {
     const nav = document?.getElementById("Nav");
     if (nav) {
       nav?.classList.add("absolute", "opacity-0");
-      
+
       if (isDesktop !== undefined) {
         initialRender && isDesktop === true
           ? nav.setAttribute("style", "animation: show-nav 1s 4s forwards;")
@@ -40,7 +40,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <main className="relative">
+      <main>
         {initialRender && isDesktop && <OpeningAnimation />}
         <StaticImage
           alt="background"
