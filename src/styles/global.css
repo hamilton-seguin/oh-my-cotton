@@ -30,8 +30,8 @@ body {
   font-weight: 300;
   font-size: 19px;
   line-height: 1.75rem;
-  color: #9f9f9f;
-  background-color: #fcfcfc;
+  color: #757575;
+  background-color: #FFFFFF;
 }
 @tailwind components;
 .white {

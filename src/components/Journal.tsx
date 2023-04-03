@@ -27,7 +27,7 @@ export const Journal = () => {
         >
           <div className="snap-start shrink-0 max-w-[68vw] lg:max-w-[28vw] mr-2 2xl:mr-3">
             <StaticImage
-              src="../images/journal1.jpeg"
+              src="../images/journal1vogue2.jpg"
               alt="ohmycotton vogue cover"
               className=" lg:max-w-[28vw]"
               draggable={false}
@@ -38,7 +38,7 @@ export const Journal = () => {
           </div>
           <div className="snap-start shrink-0 max-w-[68vw] lg:max-w-[28vw] mx-2 2xl:mx-3">
             <StaticImage
-              src="../images/journal2.jpeg"
+              src="../images/journal2uomo2.jpg"
               alt="ohmycotton l'uomo cover"
               className=" lg:max-w-[28vw]"
               draggable={false}
@@ -60,7 +60,7 @@ export const Journal = () => {
           </div>
           <div className="snap-start shrink-0 max-w-[68vw] lg:max-w-[28vw] mx-2 2xl:mx-3">
             <StaticImage
-              src="../images/journal1.jpeg"
+              src="../images/journal1vogue2.jpg"
               alt="ohmycotton vogue cover"
               className=" lg:max-w-[28vw]"
               draggable={false}
@@ -71,7 +71,7 @@ export const Journal = () => {
           </div>
           <div className="snap-start shrink-0 max-w-[68vw] lg:max-w-[28vw] mx-2 2xl:mx-3">
             <StaticImage
-              src="../images/journal2.jpeg"
+              src="../images/journal2uomo2.jpg"
               alt="ohmycotton l'uomo cover"
               className=" lg:max-w-[28vw]"
               draggable={false}
