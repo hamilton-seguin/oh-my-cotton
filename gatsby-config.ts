@@ -1,6 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  siteMetadata: {
+    title: "Oh My Cotton",
+    siteUrl: `https://ohmycotton.gatsbyjs.io/`,
+    description: `Oh My Cotton is a small business that sells organic cotton products`
+  },
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
