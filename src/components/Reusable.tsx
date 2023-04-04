@@ -32,7 +32,7 @@ export const Reusable2 = () => {
   return (
     <div className="flex my-12 flex-col lg:flex-row ">
       <StaticImage
-        src="../images/main6.jpeg"
+        src="../images/main6.jpg"
         alt="We know how to keep clothes in good condition"
         className="max-h-[40vh] lg:max-w-[49%] xl:max-h-[60vh]"
       />

@@ -49,7 +49,7 @@ export const Journal = () => {
           </div>
           <div className="snap-start shrink-0 max-w-[68vw] lg:max-w-[28vw] mx-2 2xl:mx-3">
             <StaticImage
-              src="../images/journal3.jpeg"
+              src="../images/journal3.jpg"
               alt="donate and win visit the atelier"
               className=" lg:max-w-[28vw]"
               draggable={false}
@@ -82,7 +82,7 @@ export const Journal = () => {
           </div>
           <div className="snap-end shrink-0 max-w-[68vw] lg:max-w-[28vw] mx-2 2xl:mx-3">
             <StaticImage
-              src="../images/journal3.jpeg"
+              src="../images/journal3.jpg"
               alt="donate and win visit the atelier"
               className=" lg:max-w-[28vw]"
               draggable={false}

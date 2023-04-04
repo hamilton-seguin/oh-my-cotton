@@ -7,7 +7,7 @@ export const SideToSide = () => {
     <div className="flex my-16 relative flex-col lg:flex-row lg:justify-between">
       <div className="relative mb-8 lg:mb-0 max-h-fit lg:max-w-[49%] ">
         <StaticImage
-          src="../images/main2.jpeg"
+          src="../images/main2.jpg"
           alt="ohmycotton"
           className="max-h-[40vh] xl:max-h-[60vh]"
           />
