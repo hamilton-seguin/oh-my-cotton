@@ -13,7 +13,7 @@ export const Footer = () => {
           <p>office@ohmycotton.com</p>
           <p>+3465 785 552</p>
         </div>
-        <div className="text-sm text-gray-300 mt-10 hidden lg:block">
+        <div className="text-sm text-gray-400 mt-10 hidden lg:block">
           <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MADGALENA FIOLKA & HAMILTON`}</p>
         </div>
       </div>
@@ -34,7 +34,7 @@ export const Footer = () => {
           <Link to="/#news">News</Link>
         </div>
       </div>
-      <div className="px-4 text-sm col-start-1 text-gray-300 mt-10 lg:relative lg:hidden">
+      <div className="px-4 text-sm col-start-1 text-gray-400 mt-10 lg:relative lg:hidden">
           <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MADGALENA FIOLKA & HAMILTON`}</p>
         </div>
     </footer>

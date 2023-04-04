@@ -35,7 +35,7 @@ body {
 }
 @tailwind components;
 .white {
-  color: #fcfcfc;
+  color: #FFFFFF;
 }
 .offset-text-left {
   position: absolute;
@@ -57,8 +57,8 @@ body {
   text-decoration-thickness: 1px;
 }
 .myBorder {
-  border-top: #fcfcfc 1rem solid;
-  border-bottom: #fcfcfc 1rem solid;
+  border-top: #FFFFFF 1rem solid;
+  border-bottom: #FFFFFF 1rem solid;
   border-left: none;
   border-right: none;
 }
@@ -134,7 +134,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fcfcfc;
+  background-color: #FFFFFF;
   animation-name: white-rect, shrink-rect, delete-rect-title;
   animation-duration: 2s, 3s, 1s;
   animation-delay: 500ms, 5s, 9s;
