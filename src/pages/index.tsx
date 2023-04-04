@@ -15,6 +15,7 @@ import { useIsDesktop } from "../utils/utils";
 
 import main4mp4 from "../assets/main4.mp4";
 import main4webm from "../assets/main4.webm";
+import { SEO } from "../components/Seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { initialRender, toggleInitialRender } =
@@ -86,8 +87,9 @@ export const Head: HeadFC = () => {
   return (
     <>
       <html lang="en" />
-      <title>Home Test</title>
+      <title>Oh My Cotton</title>
       <body className="max-w-[100vw]" />
+      <SEO />
     </>
   );
 };

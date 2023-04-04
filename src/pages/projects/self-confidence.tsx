@@ -9,6 +9,7 @@ import { Breadcrumbs } from "../../components/Breadcrumbs";
 
 import selfVideo1Mp4 from "../../assets/selfVideo1.mp4";
 import selfVideo2Mp4 from "../../assets/selfVideoTrim2.mp4";
+import { SEO } from "../../components/Seo";
 
 
 const SelfConfidence = () => {
@@ -87,7 +88,7 @@ export const Head: HeadFC = () => {
   return (
     <>
       <html lang="en" />
-      <title>Self Confidence</title>
+      <SEO title="Self Confidence" description="A project all about revealing the strength of your personality through our cotton designs" pathname="https://ohmycotton.gatsbyjs.io/projects/self-confidence/"/>
     </>
   );
 };

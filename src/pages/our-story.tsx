@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout/Layout";
 import { Breadcrumbs } from "../components/Breadcrumbs";
+import { SEO } from "../components/Seo";
 
 const OurStory = () => {
   return (
@@ -108,7 +109,7 @@ export const Head: HeadFC = () => {
   return (
     <>
       <html lang="en" />
-      <title>Our Story</title>
+      <SEO title="Our Story" description="Learn about our designers and their art" pathname="https://ohmycotton.gatsbyjs.io/our-story/"/>
     </>
   );
 };
