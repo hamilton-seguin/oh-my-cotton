@@ -6,7 +6,7 @@
 
 [Oh my cotton](ohmycotton.gatsbyjs.oi) is a _(factice)_ small business that sells organic cotton products. This is the website for the business.
 
-Created with **Gatsby**, **Typescript**, **TailwindCSS** & **React**.
+    Created with Gatsby, Typescript, TailwindCSS & React.
 
 
-Design by Magdalena Fiolka & Hamilton Seguin (me)
+_(Design by Magdalena Fiolka & Hamilton Seguin (me))_
