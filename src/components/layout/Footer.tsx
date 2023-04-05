@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="px-4 text-sm col-start-1 text-gray-400 mt-10 lg:relative lg:hidden">
-          <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MADGALENA FIOLKA & HAMILTON`}</p>
+          <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MAGDALENA FIOLKA & HAMILTON`}</p>
         </div>
     </footer>
   );

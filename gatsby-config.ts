@@ -41,7 +41,8 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: [`auto`, `webp`],
+          formats: [`auto`, `webp`, `avif`],
+          avifOptions: { quality: 60 },
           quality: 70,
         },
       },

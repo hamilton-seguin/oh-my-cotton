@@ -45,7 +45,7 @@ const IndexPage: React.FC<PageProps> = () => {
         {initialRender && isDesktop && <OpeningAnimation />}
         <StaticImage
           alt="background"
-          src="../images/backgroundMain.jpeg"
+          src="../images/main1.jpg"
           className="min-h-[75vh] max-h-[90vh]"
           loading="eager"
           objectPosition={"bottom"}
