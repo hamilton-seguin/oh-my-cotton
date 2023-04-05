@@ -55,7 +55,7 @@ export const Navigation = () => {
     <nav id="Nav" className="myBorder bg-myWhite z-10 w-full max-w-[100vw]">
       <div className="flex items-center justify-center">
         <div className="lg:flex flex-1 justify-evenly hidden">
-          <a href="/#find-us">Find Us</a>
+          <Link to="/#find-us" title="Find Us">Find Us</Link>
           <a href="#">Product Care</a>
           <a href="#">Sustainability</a>
         </div>
@@ -75,7 +75,7 @@ export const Navigation = () => {
           <Link to="/our-story" title="Our Story">
             Our Story
           </Link>
-          <a href="/#news">News</a>
+          <Link to="/#news" title="News">News</Link>
           <a href="#contactUs">Contact</a>
         </div>
         {menuState === "closeMenu" || menuState === "default" ? (

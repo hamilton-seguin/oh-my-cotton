@@ -37,7 +37,8 @@ export const Menu = ({ closeMenu }: MenuProps) => {
           <Link to="/our-story" onClick={closeMenu}>
             Our story
           </Link>
-          <a href="/#">News</a>
+          
+          <Link to="/#news" onClick={closeMenu} title="News">News</Link>
           <a href="#">Contact</a>
           <div className="border-t-[2px] border-grey w-full"></div>
           <a href="#">Instagram</a>

@@ -13,7 +13,7 @@ export const Locations = () => {
           <p>Our pieces are at unique concept stores only.</p>
         </div>
         <div className="hidden lg:block">
-          <Link to="#find-us" className="underline">
+          <Link to="/#find-us" className="underline">
             Find us
           </Link>
         </div>
