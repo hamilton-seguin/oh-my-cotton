@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: "Oh My Cotton",
     siteUrl: `https://ohmycotton.gatsbyjs.io/`,
-    description: `Oh My Cotton is a small business that sells organic cotton products`
+    description: `Oh My Cotton is a small business that sells organic cotton products`,
   },
   graphqlTypegen: true,
   plugins: [
@@ -25,7 +25,10 @@ const config: GatsbyConfig = {
       options: {
         mode: "async",
         enableListener: true,
-        preconnect: ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
+        preconnect: [
+          "https://fonts.googleapis.com",
+          "https://fonts.gstatic.com",
+        ],
         web: [
           {
             name: "Rosario",
@@ -42,6 +45,21 @@ const config: GatsbyConfig = {
           quality: 70,
         },
       },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Oh My Cotton`,
+        short_name: `OhMyCotton`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#D1B792`,
+        display: `minimal-ui`,
+        icon: `src/images/kimono.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
     },
   ],
 };
