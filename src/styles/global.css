@@ -21,9 +21,6 @@
 ::-webkit-scrollbar-track-piece {
   background-color: transparent;
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: "Rosario", sans-serif;
   font-style: normal;
