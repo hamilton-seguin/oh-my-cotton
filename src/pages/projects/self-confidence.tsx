@@ -7,8 +7,8 @@ import { Video } from "../../components/Video";
 import { Logo } from "../../components/Logo";
 import { Breadcrumbs } from "../../components/Breadcrumbs";
 
-import selfVideo1Mp4 from "../../assets/selfVideo1.mp4";
-import selfVideo2Mp4 from "../../assets/selfVideoTrim2.mp4";
+import selfVideo1Mp4 from "../../assets/self1.mp4";
+import selfVideo2Mp4 from "../../assets/self2.mp4";
 import { SEO } from "../../components/Seo";
 
 
@@ -51,7 +51,7 @@ const SelfConfidence = () => {
           >
             <Video
               sourceMp4={selfVideo2Mp4}
-              className="min-h-[75vh] max-h-[100vw] md:min-h-[76vh] lg:min-h-max object-top lg:object-contain"
+              className="min-h-[75vh] max-h-[100vw] md:min-h-[76vh] lg:min-h-max object-center lg:object-cover lg:h-[60vw]"
             />
             <p className="text-center absolute inset-x-0 bottom-[4%] white underline">
               Go green

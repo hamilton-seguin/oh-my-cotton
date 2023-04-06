@@ -24,12 +24,11 @@ export const Video = ({
         loop
         muted
         playsInline
-        preload="auto"
         className={`w-full aspect-video h-full object-cover ${
           minHeight ? "min-h-[75vh]" : ""} max-h-[90vh] ${className}`}
         height={height}
         width={width}
-        src={sourceWebm || sourceMp4}
+        src={ sourceMp4 || sourceWebm}
       />
     </>
   );

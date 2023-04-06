@@ -15,7 +15,6 @@ import { InitialRenderContext } from "../utils/context";
 import { useIsDesktop } from "../utils/utils";
 
 import main4mp4 from "../assets/main4.mp4";
-import main4webm from "../assets/main4.webm";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { initialRender, toggleInitialRender } =
@@ -66,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </Link>
         </div>
         <div className="relative min-h-[75vh] max-h-[90vh]">
-          <Video sourceMp4={main4mp4} sourceWebm={main4webm} minHeight />
+          <Video sourceMp4={main4mp4} minHeight />
           <div className="text-center absolute inset-x-0 bottom-[10%] lg:bottom-[7%] white">
             <p>We sew, we customize</p>
             <p className="underline">For you</p>
