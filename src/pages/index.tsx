@@ -9,13 +9,13 @@ import { Locations } from "../components/Locations";
 import { Video } from "../components/Video";
 import { OpeningAnimation } from "../components/OpeningAnimation";
 import { SideToSide } from "../components/SideToSide";
+import { SEO } from "../components/Seo";
 
 import { InitialRenderContext } from "../utils/context";
 import { useIsDesktop } from "../utils/utils";
 
 import main4mp4 from "../assets/main4.mp4";
 import main4webm from "../assets/main4.webm";
-import { SEO } from "../components/Seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { initialRender, toggleInitialRender } =
@@ -88,7 +88,6 @@ export const Head: HeadFC = () => {
     <>
       <html lang="en" />
       <title>Oh My Cotton</title>
-      <body className="max-w-[100vw]" />
       <SEO />
     </>
   );

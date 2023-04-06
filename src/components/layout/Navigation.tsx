@@ -7,6 +7,7 @@ import { Menu } from "./Menu";
 
 import { useIsDesktop } from "../../utils/utils";
 import { InitialRenderContext, menuStateEnum } from "../../utils/context";
+import { Hamburger } from "./Hamburger";
 
 export const Navigation = () => {
   const isDesktop = useIsDesktop();
@@ -78,7 +79,7 @@ export const Navigation = () => {
           <Link to="/#news" title="News">News</Link>
           <a href="#contactUs">Contact</a>
         </div>
-        {menuState === "closeMenu" || menuState === "default" ? (
+        {/* {menuState === "closeMenu" || menuState === "default" ? (
           <button
             id="set"
             className="lg:hidden absolute right-[3vw] min-w-[25px] w-[7vw] flex"
@@ -94,7 +95,8 @@ export const Navigation = () => {
           >
             <StaticImage src="../../images/close.png" alt="menu" />
           </button>
-        )}
+        )} */}
+        <Hamburger openMenu={openMenu} closeMenu={closeMenu}/>
       </div>
       <Menu closeMenu={closeMenu} />
     </nav>

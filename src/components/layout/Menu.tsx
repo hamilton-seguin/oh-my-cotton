@@ -24,8 +24,8 @@ export const Menu = ({ closeMenu }: MenuProps) => {
 
   return (
     <>
-      <div id="menu" className={`${menuState} top-10 md:top-[60px] bg-myWhite h-[100vh]`}>
-        <div className="flex flex-col px-4 pt-4  justify-evenly overflow-y-scroll align-start h-[70vh] font-bold min-h-max text-sm sm:text-[19px]">
+      <aside id="menu" className={`${menuState} top-10 md:top-[60px] bg-myWhite h-[100vh]`}>
+        <nav className="flex flex-col pl-4 pt-4  justify-evenly overflow-y-scroll align-start h-[70vh] font-bold min-h-max text-sm sm:text-[19px]">
           <Link to="/#find-us" onClick={closeMenu}>
             Find us
           </Link>
@@ -49,8 +49,8 @@ export const Menu = ({ closeMenu }: MenuProps) => {
             <p className="font-light">office@ohmycotton.com</p>
             <p className="font-light">3465 785 552</p>
           </div>
-        </div>
-      </div>
+        </nav>
+      </aside>
     </>
   );
 };
