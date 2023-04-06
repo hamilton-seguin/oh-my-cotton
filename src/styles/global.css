@@ -81,7 +81,8 @@ body {
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
   gap: var(--hamburger-gap);
-
+  position: absolute;
+  z-index: 60;
   right: var(--hamburger-margin-right);
   height: min-content;
 }

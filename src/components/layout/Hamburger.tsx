@@ -16,7 +16,7 @@ export const Hamburger = ({openMenu, closeMenu}: HamburgerProps) => {
   };
 
   return (
-    <label className="hamburger-menu flex flex-col max-w-max absolute z-60 cursor-pointer lg:hidden">
+    <label className="hamburger-menu flex flex-col max-w-max cursor-pointer lg:hidden">
       <input
         id="hamburger"
         type="checkbox"
