@@ -50,7 +50,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Oh My Cotton`,
+        name: `OH MY COTTON`,
         short_name: `OhMyCotton`,
         start_url: `/`,
         background_color: `#FFFFFF`,

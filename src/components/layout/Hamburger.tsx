@@ -16,11 +16,12 @@ export const Hamburger = ({openMenu, closeMenu}: HamburgerProps) => {
   };
 
   return (
-    <label className="hamburger-menu flex flex-col max-w-max cursor-pointer lg:hidden">
+    <label htmlFor="hamburger" className="hamburger-menu flex flex-col max-w-max cursor-pointer lg:hidden">
       <input
         id="hamburger"
         type="checkbox"
         onChange={handleChange}
+        aria-label="toggle menu"
       />
     </label>
   );
