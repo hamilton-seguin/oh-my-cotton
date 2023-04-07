@@ -3,7 +3,7 @@
   --bar-width: clamp(20px, 7vw, 46px);
   --bar-height: clamp(2.4px, 0.4vh, 4px);
   --hamburger-gap: calc(var(--bar-height) + (var(--bar-height) * 0.20));
-  --hamburger-margin-right: 5vw;
+  --hamburger-margin-right: 6vw;
   --animation-timing: 750ms ease;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2 + 5px);
 }
