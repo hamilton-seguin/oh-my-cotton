@@ -1,8 +1,8 @@
 @tailwind base;
 :root {
-  --bar-width: max(5vw, 22px);
-  --bar-height: min(0.5vh, 4.5px);
-  --hamburger-gap: 0.55vh;
+  --bar-width: clamp(20px, 7vw, 46px);
+  --bar-height: clamp(2.4px, 0.4vh, 4px);
+  --hamburger-gap: calc(var(--bar-height) + (var(--bar-height) * 0.20));
   --hamburger-margin-right: 5vw;
   --animation-timing: 750ms ease;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2 + 5px);
@@ -62,8 +62,8 @@ body {
   text-decoration-thickness: 1px;
 }
 .myBorder {
-  border-top: #ffffff 1rem solid;
-  border-bottom: #ffffff 1rem solid;
+  border-top: #ffffff 1.1rem solid;
+  border-bottom: #ffffff 1.1rem solid;
   border-left: none;
   border-right: none;
 }
@@ -291,8 +291,9 @@ body {
     width: 39%;
   }
   .image3 video {
-    object-fit: contain;
+    object-fit: cover;
     aspect-ratio: auto;
+    object-position: 0% 50%;
   }
   .image4 {
     top: 65vw !important;
@@ -300,5 +301,34 @@ body {
     width: 56%;
   }
 }
+@media (min-width: 1920px) {
+  #absoluteDiv {
+    height: 113.5vw;
+  }
+  .image1 {
+    top: 11vw;
+  }
+  .image2 {
+    top: 7vw !important;
+  }
+  .image3 {
+    top: 47vw !important;
+  }
+  .image3 video {
+    object-fit: cover;
+    aspect-ratio: auto;
+  }
+  .image4 {
+    top: 72vw !important;
 
+  }
+}
+@media (min-width: 480px){
+  .myBorder {
+    border-top: #ffffff 1.6rem solid;
+    border-bottom: #ffffff 1.6rem solid;
+    border-left: none;
+    border-right: none;
+  }
+}
 @tailwind utilities;

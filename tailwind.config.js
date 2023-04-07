@@ -11,6 +11,10 @@ module.exports = {
         grey: "#757575"
       },
     },
+    screen: {
+      "2xl": "1920px",
+      "3xl": "2560px"
+    }
   },
   plugins: [],
 };

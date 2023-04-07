@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer id="contactUs" className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 mt-16 mb-10">
       <div className="flex flex-col justify-between relative lg:max-w-[50vw] px-4 lg:px-16 xl:px-[8%]">
-        <div className="max-w-xs mb-8 leading-9">
+        <div className="mb-8 leading-9">
           <h1 className="text-3xl lg:text-4xl font-bold mb-8">
             Contact us to get a special offer
           </h1>
@@ -14,7 +14,7 @@ export const Footer = () => {
           <p>+3465 785 552</p>
         </div>
         <div className="text-sm text-gray-400 mt-10 hidden lg:block">
-          <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MADGALENA FIOLKA & HAMILTON`}</p>
+          <p>{`© ${date} OHMYCOTTON DESIGN, SITE BY MAGDALENA FIOLKA & HAMILTON`}</p>
         </div>
       </div>
       <div className="grid lg:grid row-start-2 lg:row-start-1 lg:col-start-2 lg:grid-cols-3 lg:gap-x-6 underline lg:max-w-[50vw] px-4 lg:pl-16 xl:px-[8%]">

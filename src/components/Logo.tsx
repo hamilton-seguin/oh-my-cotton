@@ -13,7 +13,7 @@ export const Logo = ({ className, hexColor, width, id, maxWidth }: logoProps) =>
     <div className={className}>
       <svg
         id={id || ""}
-        width={width || "60vw"}
+        width={width || "55vw"}
         style={maxWidth ? {["maxWidth" as any]: "350px"} : undefined}
         height="100%" 
         viewBox="0 0 302 31"

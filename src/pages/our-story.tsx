@@ -19,7 +19,7 @@ const OurStory = () => {
             <h2 className="lg:col-start-1 font-bold text-2xl lg:px-16 xl:px-[8%] my-8">
               Candelaria Castano
             </h2>
-            <div className="lg:col-start-1 order-last lg:px-16 xl:px-[8%] my-8 lg:my-0">
+            <div className="lg:col-start-1 order-last lg:px-16 xl:px-[8%] my-8 lg:my-0 xl:max-w-[75%]">
               <p>
                 Her work explores the relationship between gender politics and
                 romance tourism. With influences as diverse as Machiavelli and
@@ -61,8 +61,8 @@ const OurStory = () => {
                 objectPosition={"top"}
               />
             </div>
-            <h2 className="lg:col-start-2 font-bold text-2xl lg:px-16 xl:px-[8%] mb-8 order-first">Miyashiro Aiko</h2>
-            <div className="lg:col-start-2 lg:px-16 xl:px-[8%] my-8 lg:my-0">
+            <h2 className="lg:col-start-2 font-bold text-2xl lg:px-16 xl:px-[8%] mb-8 order-first xl:mt-[4vw]">Miyashiro Aiko</h2>
+            <div className="lg:col-start-2 lg:px-16 xl:px-[8%] my-8 lg:my-0 xl:max-w-[75%]">
               <p>
                 Hiking addict, self-starter, band member, Japanese fashion
                 designer. Acting at the junction of simplicity and mathematics
