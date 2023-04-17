@@ -43,7 +43,7 @@ const config: GatsbyConfig = {
         defaults: {
           formats: [`auto`, `webp`, `avif`],
           avifOptions: { quality: 60 },
-          quality: 70,
+          webpOptions: { quality: 70 },
         },
       },
     },
